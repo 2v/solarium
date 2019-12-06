@@ -1,0 +1,23 @@
+html
+  head
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css')
+  body
+    .section
+      .containers
+        .container
+          form(method='POST', action='/submit')
+
+            .field
+              label.label Username
+              .control
+                input.input(name='username', type='text', placeholder='username')
+              p.help Be original!
+
+            .field
+              label.label Password
+              .control
+                input.input(name='password', type='password', placeholder='password')
+              p.help Make it secure!
+
+            .control
+              button.button.is-primary Submit
